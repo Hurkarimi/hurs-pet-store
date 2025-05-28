@@ -6,90 +6,87 @@
     body {
       background: linear-gradient(to bottom, #0099ff 0%, #cc99ff 100%);
       margin: 0;
-      min-height: 100vh;
       font-family: Arial, sans-serif;
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px 0;
+      padding: 20px;
     }
 
     h1 {
-      margin: 20px 0 30px 0;
-      font-size: 36px;
-      font-weight: bold;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      text-align: center;
+      margin-top: 20px;
     }
 
-    .container {
+    p {
+      text-align: center;
+    }
+
+    .pet-card {
       display: flex;
-      background: rgba(0, 0, 0, 0.3);
+      align-items: flex-start;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin: 20px auto;
+      max-width: 800px;
       padding: 20px;
-      border-radius: 12px;
-      max-width: 700px;
-      align-items: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      margin-bottom: 30px;
     }
 
-    img {
-      width: 300px;
+    .pet-card img {
+      width: 250px;
+      height: auto;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       margin-right: 20px;
-    }
-
-    .info {
-      text-align: left;
-      max-width: 350px;
-    }
-
-    .price {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #ffd700; /* gold color */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     .description {
-      font-size: 18px;
-      line-height: 1.4;
+      text-align: left;
+      flex: 1;
+    }
+
+    .description h2 {
+      margin-top: 0;
+    }
+
+    .description p {
+      color: white;
     }
   </style>
 </head>
 <body>
 
   <h1>Hurs Pet Store</h1>
+  <p>This is a photo of my cat named Ali.</p>
 
-  <div class="container">
-    <img src="ali.png" alt="Kitty Cat Ali">
-    <div class="info">
-      <div class="price">$1</div>
-      <div class="description">
-        This cat is a rare Neko Boy, a Half Human and Half Cat, and Full on Femboy. He is a needy boy and wants cuddles and kisses. but do be warn if your Name is Cordell he will want to fuck you because he likes fucking jews
-      </div>
+  <!-- Pet 1: Ali -->
+  <div class="pet-card">
+    <img src="ali.png" alt="Ali the Cat">
+    <div class="description">
+      <h2>Ali</h2>
+      <p>This cat is a rare Neko Boy — half human, half cat, and full-on cuddle-loving femboy. He’s a needy boy who wants cuddles and kisses!</p>
+      <p><strong>Price: $1</strong></p>
     </div>
   </div>
 
-  <div class="container">
-    <img src="elmer.png" alt="Kitty Cat Elmer">
-    <div class="info">
-      <div class="price">$5</div>
-      <div class="description">
-        Meet Elmer, the charming feline with a heart of gold. Loves adventures and lots of playtime.
-      </div>
+  <!-- Pet 2: Dharmik -->
+  <div class="pet-card">
+    <img src="dharmik.png" alt="Dharmik the Cat">
+    <div class="description">
+      <h2>Dharmik</h2>
+      <p>Dharmik is a unique and brave little bald cat. He might look serious, but he’s a sweetheart who loves sunbathing and being held like a baby.</p>
+      <p><strong>Price: $3</strong></p>
     </div>
   </div>
-  
-<div class="pet-card">
-  <img src="dharmik.png" alt="Dharmik the Cat">
-  <div class="description">
-    <h2>Dharmik</h2>
-    <p>Dharmik is a bald cat that has cancer this cancer is known as Being indian be careful if your a south korean woman do not adopt him since he likes to rape them.</p>
-    <p>Price: just take it please he smells bad</p>
+
+  <!-- Pet 3: Elmer -->
+  <div class="pet-card">
+    <img src="elmer.png" alt="Elmer the Cat">
+    <div class="description">
+      <h2>Elmer</h2>
+      <p>Elmer is the wise old soul of the group. He enjoys quiet afternoons, warm blankets, and classical music. A true gentleman cat.</p>
+      <p><strong>Price: $5</strong></p>
+    </div>
   </div>
-</div>
 
 </body>
 </html>
